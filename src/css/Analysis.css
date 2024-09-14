@@ -1,0 +1,47 @@
+/* Analysis Page Styles */
+.analysis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Takes up most of the viewport */
+    background-color: #f7f9fc; /* Light background color for elegance */
+    padding: 20px;
+    text-align: center;
+}
+
+.analysis-content {
+    background-color: #ffffff; /* White background for the content box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for elegance */
+    max-width: 800px; /* Adjusted width for larger screens */
+    width: 100%;
+}
+
+.analysis-content h2 {
+    color: #2c3e50; /* Dark blue-gray for title */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.analysis-content p {
+    color: #34495e; /* Darker gray for text */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px; /* Set height for the chart */
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .analysis-content {
+        padding: 20px;
+    }
+
+    .chart-container {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}

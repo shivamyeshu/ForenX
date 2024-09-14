@@ -1,0 +1,75 @@
+/* Navbar burger styling */
+.navbar-burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+}
+
+.navbar-burger span {
+    display: block;
+    width: 25px;
+  
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navbar-burger {
+        display: flex; /* Show the burger menu on mobile */
+    }
+
+    .navbar-menu.is-active {
+        display: flex; /* Show the mobile menu when active */
+    }
+}
+/* Navbar styling */
+.navbar {
+    background-color: rgb(13, 70, 101); /* Changed from red to grey */
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-item {
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-item:hover {
+    background-color: #279cef;
+}
+
+/* Media query for desktop */
+@media (min-width: 769px) {
+    .navbar-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-burger {
+        display: none;
+    }
+}
